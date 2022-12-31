@@ -1,38 +1,654 @@
-.App {
-  text-align: center;
+html body{
+  margin: 0 auto;
+  background: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container1{
+  background-image: url('https://i.ibb.co/wSDHkhj/brooke-lark-08b-OYn-H-r-E-unsplash-1-e1594895894672-1-5f94801c3e0db.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em 0em 15em 0em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1, h2{ 
+font-size: 5rem;
+margin-bottom: 0em;
+}
+
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+}
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  list-style: none;
+  font-size: 1rem;
+}
+
+nav ul li{
+  padding: 1em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+#style-2 {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+#style-2::before {
+  content: '';
+  position: absolute;
+  top: 70%;
+  width: 60%;
+  height: 0.1875rem;
+  background-color: orange;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+#style-2:hover {
+  color: orange;
+}
+#style-2:hover::before {
+  transform: scaleX(1);
+}
+
+.Cart{
+  transform: scale(2)
+}
+
+.search{
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.bar{
+  width: 29%;
+  padding: 1em 0em;
+}
+
+.button{
+  background-color: orange;
+  border: none;
+  padding: 1.2em 2em;
+  border-radius: 0em 10px 10px 0em;
+}
+
+
+.numbers span{
+  padding: 0em 3.5em 0em 0em;
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.numbers .icon{
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(0deg) brightness(118%) contrast(119%);
+}
+
+@media (max-width: 537px){
+    nav ul li{
+        padding: 0.4em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+      }
+}
+
+@media (max-width: 805px){
+  .bar{
+      width: 80%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container2{
+  background:url(https://i.ibb.co/FmHb58V/second-section-background-pieedit.jpg);
+  background-color: #777777;
+  background-blend-mode: screen;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em 0em 30em 0em;
+  
+ 
+}
+
+#discover{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.buttons{
+  display: flex;
+}
+
+.about{
+  margin-bottom: 0;
+}
+
+.buttons button{
+  background-color:#ff7f00;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  padding: 1.51em 3em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#buttonarrow1{
+  border-radius: 0px 10px 10px 0px;
+  padding: 1.4em 2em;
+  background-color: #ffaa4d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media (min-width: 1129px){
+  #container2{
+      background:url(https://i.ibb.co/FmHb58V/second-section-background-pieedit.jpg), url(https://i.ibb.co/VmqNXKv/backgroundedit2.jpg);
+      background-position: top left -35em, bottom right;
+      background-repeat: no-repeat;
+      padding: 10em 0em 20em 6em;
   }
-  to {
-    transform: rotate(360deg);
+
+  #discover{
+      width: 50%;
   }
+}
+
+#container3{
+    background-color: #f2f6f7;
+    padding: 4em 0em 20em 0em;
+}
+
+#cuisine{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order{
+    margin-bottom: 0;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 4em .3em;
+}
+
+.food li{
+    padding: 0em .5em;
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid black;
+
+}
+
+.food li:hover{
+    color: orange;
+    border-color: orange;
+}
+
+#container3 img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+#images{
+    max-width: 600px;
+    justify-content: center;
+}
+
+figure{
+    position: relative;
+    margin: 0 auto; /* to center it */
+    padding: 30px 0 0 0;  
+   
+    font-size: 0.9375rem;
+    text-align: center;
+    
+    display: inline-block;
+    max-width: 100%;
+
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 11.75em 6.31em;
+    opacity: 1;
+    object-fit: fill;
+}
+
+
+figure figcaption{
+    position: absolute;
+    right: 0; bottom: 0; left: 0;
+    
+    background: black; /* fallback */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb000000, endColorstr=#bb000000); /* IE fix */
+    background: rgba(0,0,0,.7); /* transparent background */  
+    color: #fff; 
+    padding: 5.18em 2em; 
+    opacity: 0;
+}
+
+figure figcaption:hover{
+    opacity: 1;
+}
+
+
+#image{ 
+    position: relative;
+    display: flex;
+}
+
+.image__overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    padding: 10.4em 0em;
+    opacity: 1;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+.image__title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.6875rem;
+}
+
+.stars{
+    font-size: 1.6875rem;
+    color: #ffc107;
+}
+
+.contadina{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.1875rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+
+.ordernow1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9375rem;
+    color: white;
+    border: none;
+    background-color: orange;
+    border-radius: 0.3125rem;
+    padding: 1em 2em;
+}
+
+.ordernow2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9375rem;
+    color: white;
+    border: none;
+    background-color: orange;
+    border-radius: 0.3125rem;
+    padding: 0.6em 1em;
+    
+}
+
+.remove{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9375rem;
+    color: white;
+    border: none;
+    background-color: orange;
+    border-radius: 0.3125rem;
+    padding: 0.6em 1em;
+    
+}
+
+#buttoncolor{
+    background-color: #f2f6f7;
+    color: black;
+}
+
+.alternative-pick{
+    margin-bottom: -2.3em;
+}
+
+
+.incart{
+    padding-bottom: -2em;
+}
+
+@media(min-width: 320px) and (max-width: 511px) {
+    #container3 img{
+        max-width: 100%;
+        height: 400px;
+    }
+
+    figure figcaption{
+        padding: 5.72em 2em;
+    }
+}
+
+
+@media (min-width: 512px) {
+
+    #container3 img{
+        height: 400px;
+    }
+    .food li{
+        padding: 0em 2em;
+        font-size: 1.5625rem;
+    }
+    #images{
+        max-width: 1500px;
+    }
+
+    #image{
+        width: 24.74%;
+        
+    }
+
+    .image__overlay{
+        transform: translate( -60%, -50% );
+        top: 50%;
+        left: 60%;
+        width: 100%;
+        padding: 5.7em 0em;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 989px) {
+    .contadina{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .image__title{
+        font-size: 2rem;
+    }
+
+    figure figcaption{
+        padding: 5.3em 2em;
+    }
+    .alternative-pick{
+        margin-bottom: -5.8em;
+    }
+    
+}
+
+
+
+
+#container4{
+    background-image: linear-gradient(to bottom, #f2f6f786, #f2f6f7), url(https://i.ibb.co/9q35Lmp/7fbacdcfbfe3adb9f598be1747e232e6-2580x1720.jpg);
+    background-repeat: no-repeat;
+    padding: 4em 0em 0em 0em;
+    
+}
+
+#opening{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.callnow{
+    font-size: 1.25rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.number{
+    font-size: 3.125rem;
+    color: orange;
+    font-weight: 500;
+    text-shadow: 0 0 1em rgb(46, 46, 46), 0 0 0.2em rgb(255, 255, 255);
+}
+
+.days{
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.days2{
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.time2{
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+
+.time{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+
+.bothh{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.both{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.both1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-slide{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+    
+   
+  }
+
+.swiper-slide img{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 2em 2.3em;
+}
+
+.swiper-pagination{
+    margin-bottom: 0em;
+    color: orange;
+}
+
+#subtitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 132, 8);
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.swiper .swiper-button-prev{
+    color: orange;
+}
+
+.swiper .swiper-button-next{
+    color: orange;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: orange;
+}
+
+
+@media (min-width: 823px){
+    .bothh{
+        width: 90%;
+        flex-direction: row;
+        padding: 0em 0em 0em 0em;
+    }
+
+    .container-slide{
+        max-width: 1000px;
+    }
+
+    .swiper-slide img{
+        height: 600px;
+        padding: 2em 6.2em;
+    }
+    
+}
+
+
+#container5{
+    padding: 10em;
+    background: linear-gradient(90deg, rgba(223,228,233,1) 10%, rgba(255,255,255,1) 30%);
+    
+}
+
+.testimonial{
+    color: orange; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.johnsmith{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.art{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: grey;
+}
+
+.stars{
+    font-size: 1.7rem;
+    color: #ffc107;
+}
+
+.boneless{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200%;
+    text-align: center;
+    font-size: 1.875rem;
+    font-style: italic;
+}
+
+#review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+}
+
+.photo img{
+    width: 190%;
+}
+
+@media (min-width: 669px){
+    .photo img{
+        width: 40%;
+    }
+
+    .boneless{
+        width: 100%;
+    }
+}
+
+@media(max-width: 490px){
+    nav ul{
+        padding: .7em;
+        font-size: .76em;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .numbers span{
+        font-size: 1.9rem;
+        padding: 0em 1em 0em 0em;
+    }
+
+    #discover h2{
+        font-size: 4rem;
+    }
+
+    .food li{
+        padding: 0em .34em;
+        font-size: 1.2rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-bottom: 2px solid black;
+    
+    }
+
+
+    .swiper .swiper-button-next, .swiper-button-prev{
+        display: none;
+    } 
+
+    .swiper .swiper-button-prev{
+        display: none;
+    }
+
+    .photo img{
+        width: 300%;
+    }
+
+    .boneless{
+        width: 400%;
+    }
+
+    .stars{
+       
+        font-size: 1rem;
+     }
 }

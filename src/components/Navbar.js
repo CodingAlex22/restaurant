@@ -15,7 +15,7 @@ function NavBarComponent(){
     }
 
     const checkout = async () => {
-        await fetch('http://localhost:4000/checkout', {
+        await fetch('https://cuisine-resturant4923.onrender.com/checkout', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

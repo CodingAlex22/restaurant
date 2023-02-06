@@ -32,5 +32,5 @@ a demo. Possibly have a working slide show but that's it.
 
 ## Lessons Learned:
 
-I thought converting a static CSS into mobile friendly was rough but converting a website to React is a battle of it's own. Not impossible, but if you're
+I thought converting a static website into mobile friendly was tricky but converting a website to React is a battle of it's own. Not impossible, but if you're
 starting out with React, it can get pretty tricky, especially if certain CSS elements suddenly stopped working. 

@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+[Resturant Cuisine]: https://cuisine-resturant4923.onrender.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Resturant Cuisine
 
-## Available Scripts
+Resturant Cuisine is a Resturant website that displays the Resturant's basic information as well as a working shopping cart. 
 
-In the project directory, you can run:
+**Link to project:** https://cuisine-resturant4923.onrender.com/
 
-### `npm start`
+<img src="https://i.ibb.co/7XJtXQS/ezgif-3-3510adc07c.gif" height="80%" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The website works like any regular website but to use the shopping chart, simply head to the menu section and hover over the image of your choice.
+There, you can interact with how many items you want. Then go to the shopping cart button all the way to the top of the homepage to see what you've
+ordered and total sale price.
 
-### `npm test`
+## How It's Made:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Tech used:** React, Bootstrap
 
-### `npm run build`
+I originally created this website using good ol' HTML and CSS but then I had the idea of converting it into React and making it useable. I've used
+different React components for each section of the website. It got a bit messy at first but I was able to overrcome it. Then, I added the CSS 
+in addition and later on installed Bootstrap in order to make a good looking shopping cart. I worked on the shopping cart module in order to calculate
+the price of the items in the cart. From there, I had to figure out how to use a different
+styling method as my original hover style for the menu images did not want to work with Bootstrap. I managed to get it fixed and used the original
+style I intended it for instead of using Bootstrap styles that it came with.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Optimizations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I wanted to get it connected with Stripe and that's really all I wanted but don't really see the need since it's 
+a demo. Possibly have a working slide show but that's it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Lessons Learned:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I thought converting a static CSS into mobile friendly was rough but converting a website to React is a battle of it's own. Not impossible, but if you're
+starting out with React, it can get pretty tricky, especially if certain CSS elements suddenly stopped working. 
